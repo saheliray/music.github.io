@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>www.music.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!--Bootstrap css-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!--FontAwosome CDN-->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+<!--Fancybox CDN-->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all"/>
+
+<!--Animate css--> 
+
+  <link href="https://github.com/animate-css/animate.css.git" rel="stylesheet" type="text/css" media="all"/>
+  
+ <!--nav css-->
+
+  <link rel="stylesheet" href="css/scrolling-nav.css">
+
+  <!--Google font css-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap:100,300,400,500,700,900" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet"> 
+
+ <!--Owl css-->
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+ <!--Own css-->
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top nv">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><h1>MUSIC</h1></a>
+
+  <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon">
+      
+     <i class="fa fa-bars" aria-hidden="true" style="color: white; background-color: black;"></i>
+
+    </span>
+    </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#team">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#product">Blogs</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#cont">Contact</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav" style="margin: 0;">
+    <li class="nav-item">
+      <a class="nav-link" style="margin: 0;" href="#"><button class="openBtn" onclick="openSearch()"><i class="fas fa-search" style="font-size: 20px;"></i></button></a>
+
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+      
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="margin: 0;" href="#"><i class="far fa-heart" style="font-size: 20px;"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="margin: 0;" href="#"><i class="fas fa-user-check" style="font-size: 20px;"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="margin: 0;" href="#"><i class="fas fa-cart-plus" style="font-size: 20px;"></i></a>
+    </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel">   
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/ban2.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="ser container-fluid">
+
+    <div class="row">
+
+      <div class="block1">
+        <i class="fas fa-chalkboard-teacher" style="font-size: 30px; color: #fff; padding-right: 10px;"></i>
+        <h5>FREE Tech Support</h5>
+      </div>
+
+      <div class="block2">
+        <i class="fas fa-shipping-fast" style="font-size: 30px; color: #fff; padding-right: 10px;"></i>
+        <h5>FREE Shipping</h5>
+      </div>
+
+      <div class="block3">
+        <i class="fas fa-shield-alt" style="font-size: 30px; color: #fff; padding-right: 10px;"></i>
+        <h5>FREE 2-year Warranty</h5>
+      </div>
+
+      <div class="block4">
+        <i class="fas fa-tools" style="font-size: 30px; color: #fff; padding-right: 10px;"></i>
+        <h5>55-point Instument Inspection</h5>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid">
+    
+    <div class="row">
+      
+      <div class="offer1">
+        
+        <div class="guiter">
+          <h2>Fender American <code>Only 4599/-</code> </h2>
+          <img src="image/off1.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="piyano">
+          <img src="image/off2.png" alt="" class="img-fluid">
+          <h2>Digital Piano <code >25% OFF</code> </h2>
+        </div>
+
+      </div>
+
+      <div class="offer2">
+        
+        <div class="dram">
+          <img src="image/off3.png" alt="" class="img-fluid">
+          <h2>Childrens Drum <code >OFF 30%</code> </h2>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="about">
+        
+        <h3>Who we are</h3>
+
+        <h1>Sense the Instument</h1>
+
+        <p>Etiam dignissim diam quis enim lobortis scelerisque fermentum. Nec nam aliquam sem et tortor consequat id. Id eu nisl nunc mi ipsum faucibus vitae. Risus nullam eget felis eget nunc lobortis mattis aliquam. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Id diam vel quam elementum. Pulvinar elementum integer enim neque. Elementum tempus egestas sed sed risus. Neque ornare aenean euismod elementum nisi quis eleifend quam.</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      
+      <div class="about1">
+        <img src="image/about_bg.jpg" class="img-fluid">
+      </div>
+
+    </div>
+  
+  </div>  
+ 
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col">
+      
+      <h1>COLLECTION</h1>
+
+      <p>To succeed you must believe. When you believe, you will succeed. Don’t ever play yourself. Stay focused. Lion!</p>
+
+      </div>
+
+    </div>
+
+  
+    <div class="row">
+
+    <div class="col col-xl-4 col-sm-12 col-12 col-md-6 text-center">
+      
+    <div class="col-item">
+
+    <div class="col-img">
+      
+    <img src="image/col1.png" class="img-fluid">
+
+    <div class="overlay d-flex">
+          
+     <a href="#" class="btn">Visit Shop</a>
+
+   </div>  
+
+    </div>
+
+   </div>
+
+    <h2>Guitar</h2>
+
+    <h5>4 items</h5>
+
+    </div>
+
+    <div class="col col-xl-4 col-sm-12 col-12 col-md-6 text-center">
+      
+    <div class="col-item">
+
+    <div class="col-img">
+      
+    <img src="image/col2.png" class="img-fluid">
+
+    <div class="overlay d-flex">
+          
+     <a href="#" class="btn">Visit Shop</a>
+
+   </div>  
+
+    </div>
+
+   </div>
+
+    <h2>Drum</h2>
+
+    <h5>4 items</h5>
+
+    </div>
+
+    <div class="col col-xl-4 col-sm-12 col-12 col-md-6 text-center">
+      
+    <div class="col-item">
+
+    <div class="col-img">
+      
+    <img src="image/col3.png" class="img-fluid">
+
+    <div class="overlay d-flex">
+          
+     <a href="#" class="btn">Visit Shop</a>
+
+   </div>  
+
+    </div>
+
+   </div>
+
+    <h2>Trumpet</h2>
+
+    <h5>4 items</h5>
+
+    </div>
+
+
+    </div>
+
+
+
+    <div class="row">
+
+    <div class="col col-xl-4 col-sm-12 col-12 col-md-6 text-center">
+      
+    <div class="col-item">
+
+    <div class="col-img">
+      
+    <img src="image/col4.png" class="img-fluid">
+
+    <div class="overlay d-flex">
+          
+     <a href="#" class="btn">Visit Shop</a>
+
+   </div>  
+
+    </div>
+
+   </div>
+
+    <h2>Headerphone</h2>
+
+    <h5>4 items</h5>
+
+    </div>
+
+    <div class="col col-xl-4 col-sm-12 col-12 col-md-6 text-center">
+      
+    <div class="col-item">
+
+    <div class="col-img">
+      
+    <img src="image/col5.png" class="img-fluid">
+
+    <div class="overlay d-flex">
+          
+     <a href="#" class="btn">Visit Shop</a>
+
+   </div>  
+
+    </div>
+
+   </div>
+
+    <h2>Micro</h2>
+
+    <h5>4 items</h5>
+
+    </div>
+
+
+
+
+    <div class="col col-xl-4 col-sm-12 col-12 col-md-6 text-center">
+      
+    <div class="last-box">
+  
+     <img src="image/col6.png" class="img-fluid">
+
+
+      <div class="cl">
+
+        <div class="col_social">
+         
+          <a href=""><i class="fas fa-plus-circle" style="font-size: 55px; text-align: center; "></i></a>
+
+        </div>
+
+        <div class="col_info"> 
+
+          <h4>Discover <h5>All</h5></h4>
+
+        </div>
+
+        </div>      
+
+     </div>
+
+    </div>
+
+    </div>
+
+  </div>  
+
+
+
+  <div class="container-fluid">
+    
+    <div class="row">
+      
+      <div class="pro mx-auto d-block">
+        
+        <div class="part1">
+
+          <h1>New Arrivals</h1>
+          <h6>When you believe, <br> you will succeed.</h6>
+        
+        </div>
+
+      </div>
+
+      <div class=" col-xl-9 col-sm-12 col-12 col-md-12 gel-section">
+
+      <div class="owl-carousel owl-theme">
+        <div class="item gel-item">
+          <div class="gel-img">
+          <img src="image/p1.jpg">
+          <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+          </div>
+              <h2>Guiter</h2>
+              <h5>Only 5000/-</h5>        
+            </div>
+          <div class="item gel-item">
+          <div class="gel-img">
+          <img src="image/p2.jpg">
+          <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+        </div>
+<h2>Guiter</h2>
+<h5>Only 5000/-</h5>
+        </div>
+            <div class="item gel-item">
+            <div class="gel-img">
+          <img src="image/p3.jpg">
+          <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+        </div>
+<h2>Guiter</h2>
+<h5>Only 5000/-</h5>
+        </div>
+            <div class="item gel-item">
+              <div class="gel-img">
+          <img src="image/p8.jpg">
+          <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+        </div>
+<h2>Guiter</h2>
+<h5>Only 5000/-</h5>
+        </div>
+        <div class="item gel-item">
+          <div class="gel-img">
+          <img src="image/p9.jpg">
+          <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+        </div>
+<h2>Guiter</h2>
+<h5>Only 5000/-</h5>
+        </div>
+
+       </div>
+   
+      </div>
+
+    </div>
+
+    <div class="row">
+      
+      <div class="pro mx-auto d-block">
+        
+        <div class="part2">
+  
+            <h1>Beta Series</h1>
+            <h6>Top Deals</h6> 
+        
+        </div>
+
+      </div>
+
+      <div class="col-xl-9 col-sm-12 col-12 col-md-12 gel-section no-gutters">
+        
+
+  <div class="owl-carousel owl-theme">
+    <div class="item gel-item">
+      <div class="gel-img">
+      <img src="image/p4.jpg">
+      <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+      </div>
+    <h2>Guiter</h2> 
+    <h5>Only 5000/-</h5>     
+    </div>
+      <div class="item gel-item">
+      <div class="gel-img">
+      <img src="image/p5.jpg">
+      <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+    </div>
+    <h2>Guiter</h2>
+    <h5>Only 5000/-</h5>
+    </div>
+        <div class="item gel-item">
+        <div class="gel-img">
+      <img src="image/p6.jpg">
+      <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+    </div>
+    <h2>Guiter</h2>
+    <h5>Only 5000/-</h5>
+    </div>
+        <div class="item gel-item">
+          <div class="gel-img">
+      <img src="image/p7.jpg">
+      <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+
+      </div>
+    </div>
+    <h2>Guiter</h2>
+    <h5>Only 5000/-</h5>
+    </div>
+            <div class="item gel-item">
+          <div class="gel-img">
+      <img src="image/p10.jpg">
+      <div class="overlay d-flex">       
+        <a href="#"><i class="far fa-heart icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-eye icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-cart-plus icon" style="font-size: 20px;"></i></a>
+        <a href="#"><i class="fas fa-bolt icon" style="font-size: 20px;"></i></a>
+      </div>
+    </div>
+    <h2>Guiter</h2>
+    <h5>Only 5000/-</h5>
+    </div>
+
+
+
+
+   </div>
+   
+  </div>
+
+  </div>
+
+  </div>
+
+
+
+<div class="container-fluid foot">
+
+  <h1>MUSIC</h1>
+
+
+<div class="box">
+  
+<h5> Phone no.- 033 2638 4107;    <h4>27, 3, Grand Trunk Rd, S, Howrah, West Bengal 711101;</h4> </h5>
+
+<h5>Website- www.pottery.in; <h4>Gmail- potteryinfo@gmail.com;</h4>  <h5>Whatsapp no.- 086177 84327;</h5> <h4>Helpline no.- 098304 98305;</h4></h5>
+
+</div>
+
+<div class="social">
+
+   <a href=""><i class="fab fa-facebook-f icon" aria-hidden="true"></i></a>
+
+   <a href=""><i class="fab fa-instagram icon" aria-hidden="true"></i></a>
+
+   <a href=""><i class="fab fa-pinterest-p icon" aria-hidden="true"></i></a>
+
+   <a href=""><i class="fab fa-twitter icon" aria-hidden="true"></i></a>
+
+   <a href=""><i class="fab fa-google icon" aria-hidden="true"></i></a>
+
+</div>
+
+<div class="copyright">
+<p>© COPYRIGHTS 2002 POTTERY. ALL RIGHTS RESERVED</p>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Bootstrap js-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> 
+
+<!--Fancybox js-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" language="javascript"></script>
+
+
+<!--Owl js-->
+
+<script src="js/owl.js" language="javascript"></script>
+
+<script src="js/owl.carousel.min.js" language="javascript"></script>
+
+ <!--nav js-->
+
+<script src="js/scrolling-nav.js" language="javascript"></script>
+  
+<script type="text/javascript">
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+
+  <script type="text/javascript">
+  
+    $(window).scroll(function(){
+    $('nav').toggleClass('scrolled',$(this).scrollTop()>200);
+
+    });
+ </script>
+
+<script>
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+
+
+
+
+</body>
+</html>
